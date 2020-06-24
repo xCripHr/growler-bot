@@ -59,7 +59,7 @@ var filter = m => m.author.id === message.author.id;
                   let giveEmbed = new Discord.RichEmbed()
                   .setColor("#f558c9")
                   .setDescription(`**Ödül: ${title}** \n🎉'a Basarak Katıl \nKalan Süre : ${duration} \n **Başlama Zamanı :** ${hours}:${minutes}:${seconds} ${suffix}`)
-                  .setFooter(message.author.username + " (RTX-Bot çekiliş sistemi)", message.author.avatarURL);
+                  .setFooter(message.author.username + " (Farkedilmem Bot Cekilis Sistemi)", message.author.avatarURL);
                   message.guild.channels.find("name" , room).send(' :heavy_check_mark: **ÇEKİLİŞ BAŞLADI** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
                      let re = m.react('🎉');
                      setTimeout(() => {
@@ -77,7 +77,7 @@ var filter = m => m.author.id === message.author.id;
                        
                        var embedLel = new Discord.RichEmbed()
                         .setColor("RANDOM")
-                        .setDescription("Ödülünü Moderatörleri Etiketleyerek Alabilirsin!").setFooter("(RTX-Bot çekiliş sistemi)")
+                        .setDescription("Ödülünü Moderatörleri Etiketleyerek Alabilirsin!").setFooter("(Farkedilmem Bot Çekilis Sistemi)")
                     message.guild.channels.find("name" , room).send(`**Tebrikler ${gFilter}! \`${title}\` kazandın!**` , embedLel)
                 }, ms(duration));
             });

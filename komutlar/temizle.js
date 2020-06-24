@@ -7,7 +7,7 @@ exports.run = function(client, message, args) {
   
 
    
-    if(isNaN(id)) return message.channel.send("Lütfen Sayı Giriniz, Örnek: +temizle 10");
+    if(isNaN(id)) return message.channel.send("Lütfen Sayı Giriniz, Örnek: !sil 10");
 if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Bu Komutu Kullanmak İçin İzniniz Yok!");
 if(!args[0]) return message.channel.send("Hey, Lütfen Temizlenecek Mikatarı Belirtiniz!");
 message.channel.bulkDelete(args[0]).then(() => {
