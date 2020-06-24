@@ -7,7 +7,7 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
-        "!yardım",
+        "Youtube/Farkedilmem",
     ];
 
     setInterval(function() {
